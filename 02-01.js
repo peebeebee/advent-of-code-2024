@@ -1,4 +1,9 @@
-import { reports } from "./02-00.js";
+import { input } from "./02-00.js";
+
+// Create array of array of numbers for each line from input
+export const reports = input
+  .split("\n")
+  .map((line) => line.split(/\s+/).map(Number));
 
 const safeReports = reports.map((report) => {
   let allAscending = true;
