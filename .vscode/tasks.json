@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deno Watch Current File",
+      "type": "deno",
+      "command": "run",
+      "problemMatcher": ["$deno"],
+      "args": ["--allow-all", "--watch", "${file}"]
+    },
+    {
+      "label": "Deno Test Current File",
+      "type": "deno",
+      "command": "test",
+      "problemMatcher": ["$deno"],
+      "args": ["--allow-all", "--watch", "${file}"]
+    }
+  ]
+}

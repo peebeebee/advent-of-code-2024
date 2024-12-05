@@ -7,3 +7,9 @@ Just run the scripts with Deno. For example:
 ```bash
 deno 01-01.js
 ```
+
+## How to test
+
+```bash
+deno test
+```

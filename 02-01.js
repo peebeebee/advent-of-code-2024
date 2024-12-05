@@ -25,7 +25,7 @@ const safeReports = reports.map((report) => {
     }
   }
 
-  let isSafe = (allAscending || allDescending) && allInRange;
+  const isSafe = (allAscending || allDescending) && allInRange;
 
   return isSafe;
 });
