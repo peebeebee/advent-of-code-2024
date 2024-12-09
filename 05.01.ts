@@ -3,7 +3,7 @@
  * deno run --watch --allow-read 05-01.ts
  */
 
-async function importInput() {
+export async function importInput() {
   const input = await Deno.readTextFile("05.00.input");
 
   const regexNumberPipeNumber = /[0-9].*\|[0-9].*/g;
@@ -75,5 +75,5 @@ function checkPage(index: number, update: number[], rules: number[][]) {
 const { rules, updates } = await importInput();
 if (updates && rules) {
   const x = run(updates, rules);
-  console.log(x);
+  // console.log(x);
 }
